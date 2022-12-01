@@ -192,7 +192,7 @@ li{
 
 .lookbook_parent{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 20px;
 }
@@ -302,7 +302,7 @@ li{
 
 .lookbook_box{
     height: 644px;
-    width: 490px;
+    width: 450px;
 }
 
 #lookbook_1{
