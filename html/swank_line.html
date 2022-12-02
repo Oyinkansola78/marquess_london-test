@@ -68,6 +68,42 @@
             </div>
         </div>
     </div>
+    <div id="icons" class="mt-5 pb-5">
+        <div class="container">
+            <h3 class="bold big pb-5 pt-5">Click on the icons below to learn about how we craft our look.</h3>
+            <div class="d-flex justify-content-evenly">
+                <div class="icons-box container px-5 pt-5 mt-5">
+                    <div id="shoulder_pad">
+                    <h3 class="bold pb-3 form-text-header">Shoulder Pad</h3>
+                    <p class="form-text pt-4">Our jackets are constructed with light padding, providing the right amount of structure to the jacket without an obvious view.v</p>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="../imgs/MLIllustration.png" alt="illustration" usemap="#illustration">
+                    <button class="icon-btn-shoulder" onclick="toggleShoulder()" id="show_shoulder">
+                        <i class="fa-regular fa-square"></i>
+                    </button>
+                    <button class="icon-btn-sleeve" onclick="toggleSleeve()" id="show_sleeve">
+                        <i class="fa-regular fa-square"></i>
+                    </button>
+                </div>
+                <div class="icons-box container px-5 pt-5 mt-5">
+                    <div id="sleeve_pad">
+                        <h3 class="bold pb-3 form-text-header">Sleeves</h3>
+                        <p class="form-text pt-4">Our high cut arm holes shapes the sleeve silhouette into a modern cut allowing for an exquisite tapered figure.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="container icons_button_cover">
+        <button class="btn icons_button mt-5 px-2">CLICK HERE TO READ MORE ABOUT THE KEY DETAILS OF A SWANK LINE SUIT</button>
+    </div>
+    <div id="price">
+        <div class="container">
+
+        </div>
+    </div>
     <div id="lookbook_1" class="mt-5">
         <h3 class="lookbook_txt bold pt-5">LOOKBOOK</h3>
     </div>
@@ -119,5 +155,59 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+
+    <script>
+
+      function toggleShoulder() {
+    // get the clock
+    var myClock = document.getElementById('shoulder_pad');
+
+    // get the current value of the clock's display property
+    var displaySetting = myClock.style.display;
+
+    // also get the clock button, so we can change what it says
+    var clockButton = document.getElementById('show_shoulder');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // clock is visible. hide it
+      myClock.style.display = 'none';
+      // change button text
+    //   clockButton.innerHTML = 'Show clock';
+    }
+    else {
+      // clock is hidden. show it
+      myClock.style.display = 'block';
+      // change button text
+    //   clockButton.innerHTML = 'Hide clock';
+    }
+  }
+
+      function toggleSleeve() {
+    // get the clock
+    var myClock = document.getElementById('sleeve_pad');
+
+    // get the current value of the clock's display property
+    var displaySetting = myClock.style.display;
+
+    // also get the clock button, so we can change what it says
+    var clockButton = document.getElementById('show_sleeve');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // clock is visible. hide it
+      myClock.style.display = 'none';
+      // change button text
+    //   clockButton.innerHTML = 'Show clock';
+    }
+    else {
+      // clock is hidden. show it
+      myClock.style.display = 'block';
+      // change button text
+    //   clockButton.innerHTML = 'Hide clock';
+    }
+  }
+    </script>
+    
 </body>
 </html>

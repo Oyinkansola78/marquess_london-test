@@ -95,6 +95,10 @@ li{
     font-size: 16px;
 }
 
+.big{
+    font-size: 36px;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -131,6 +135,54 @@ li{
     color: #fff;
 }
 
+.icons_button{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #998100;
+    border-radius: 0%;
+    width: 730px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.icons_button:hover{
+    background-color: #998100;
+    color: #fff;
+}
+
+.icons_button_cover{
+    padding-left: 260px;
+}
+
+.icon-btn-shoulder{
+    background-color: white!important;
+    /* background-color: #000; */
+    color: #998100;
+    border-radius: 50%;
+    /* font-size: 20px; */
+    outline: none;
+    cursor: pointer;
+    position:relative;
+    padding: 2%;
+    opacity: 0.8;
+    top: -65%;
+    left: -16%;
+}
+
+.icon-btn-sleeve{
+    background-color: white!important;
+    /* background-color: #000; */
+    color: #998100;
+    border-radius: 50%;
+    /* font-size: 20px; */
+    outline: none;
+    cursor: pointer;
+    position:relative;
+    padding: 2%;
+    opacity: 0.8;
+    top: -45%;
+    left: 13%;
+}
 
 /* SHOWCASES */
 #showcase_mm{
@@ -310,6 +362,23 @@ li{
     background-color: #fff;
 }
 
+#icons{
+    text-align: center;
+    background-color: #fff;
+    /* padding-top: 20; */
+}
+
+#price{
+    background-color: #fff;
+}
+
+.icons-box{
+    border: 1px solid #fff;
+    background-color: #fff;
+    height: 96px ;
+    width: 330px;
+}
+
 
 
 /* DROPDOWN */
@@ -359,4 +428,15 @@ li{
 
   .dropdown:hover .dropbtn {
     /* background-color: #3e8e41; */
+}
+
+
+/* JAVASCRIPT */
+
+#shoulder_pad{
+    display: none;
+}
+
+#sleeve_pad{
+    display: none;
 }
