@@ -97,6 +97,10 @@ li{
 
 /* TEXT */
 
+.biggg{
+    font-size: 96px;
+}
+
 .bigg{
     font-size: 72px;
 }
@@ -107,6 +111,10 @@ li{
 
 .big{
     font-size: 36px;
+}
+
+.medium{
+    font-size: 46px;
 }
 
 .bold{
@@ -212,7 +220,7 @@ li{
 }
 
 .early_bird{
-    font-size: 46px;
+    /* font-size: 46px; */
     font-family: 'Early Bird';
     padding-top: 190px;
 }
@@ -391,6 +399,11 @@ li{
     background-color: #fff;
     height: 96px ;
     width: 330px;
+}
+
+
+.slider{
+    background-color: #b8a78d;
 }
 
 
