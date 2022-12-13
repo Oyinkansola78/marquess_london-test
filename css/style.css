@@ -8,6 +8,10 @@
     src: url(../Helvetica.ttf);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Helvetica';
     background-color: #e5e5e5;
@@ -19,6 +23,12 @@ li{
 }
 
 /* UTILITIES */
+
+.logo{
+    height: 38px;
+    width: 100%;
+}
+
 .nav_line:hover{
     border-bottom: 3px solid #998100;
     cursor: pointer;
@@ -95,7 +105,26 @@ li{
     background-size: cover;
 }
 
+.clean_list{
+    text-decoration: none;
+    color: #000;
+}
+
+.clean_list:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.float-startt{
+    position: relative;
+    top: -100px;
+}
+
 /* TEXT */
+
+.biggest{
+    font-size: 128px;
+}
 
 .biggg{
     font-size: 96px;
@@ -140,13 +169,44 @@ li{
     text-align: center;
 }
 
+.steps_text{
+    /* padding-top: 80px; */
+    position: relative;
+    top: 160px;
+}
+
+/* IMAGES */
+
+.zoom {
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
 
 /* BUTTONS */
 
-.custom_btn{
-    border: 1px solid #998100;
+.custom_btn_banner{
+    border: 1px solid #b8a78d;
+    background-color: #b8a78d;
+    color: #fff;
+    border-radius: 0%;
+    width: 143px;
+    font-size: 18px;
+}
+
+.custom_btn_banner:hover{
     background-color: #998100;
     color: #fff;
+}
+
+.custom_btn{
+    border: 1px solid #998100;
+    background-color: #fff;
+    color: #998100;
     border-radius: 0%;
     width: 143px;
     font-size: 18px;
@@ -232,8 +292,7 @@ li{
     text-align: justify;
     margin-right: 150px;
     margin-top: 70px;
-    background: rgba(0,0,0,.5);
-    /* background-color: #000; */
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* FLEX AND GRIDS */
@@ -356,22 +415,37 @@ li{
 }
 
 .steps_box{
-    height: 704px;
+    height: 634px;
     width: 450px;
 }
 
-.text_box_steps{
+.text_box_steps_1{
     border: 1px solid #fff;
     background-color: #fff;
-    margin-top: 230px;
+    height: 300px;
+    padding: 40px 20px;
+}
+
+.text_box_steps_2{
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-top: 345px;
+    width: 400px;
+}
+
+.text_box_steps_3{
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-top: 390px;
     width: 400px;
 }
 
 .text_box_steps_child{
-    border-top: 4px solid #998100;
+    border-bottom: 4px solid #998100;
     background-color: #fff;
-    margin-top: 40px;
-    padding-top: 40px;
+    /* margin-top: 40px; */
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 .lookbook_box{
