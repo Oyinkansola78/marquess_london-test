@@ -5,7 +5,12 @@
 
 @font-face {
     font-family: "Helvetica";
-    src: url(../Helvetica.ttf);
+    src: url(../HelveticaNeue-Light.woff2);
+}
+
+@font-face {
+    font-family: "Blair";
+    src: url(../Blair-ITC.woff2);
 }
 
 *{
@@ -20,6 +25,15 @@ body{
 
 li{
     font-weight: bolder;
+}
+
+nav{
+    font-family: 'Blair';
+}
+
+nav{
+    font-size: 12.8px;
+    background-color: rebeccapurple;
 }
 
 /* UTILITIES */
@@ -41,6 +55,10 @@ li{
 
 .white_text{
     color: #fff;
+}
+
+.gray_text{
+    color: #f8f9fa;
 }
 
 .corp_man{
@@ -154,10 +172,13 @@ li{
     border-top: 4px solid #998100;
     font-size: 16px;
     color: #000;
+    text-align: justify;
+    padding-left: 10px;
 }
 
 .form-text-header{
     font-size: 24px;
+    text-align: left;
 }
 
 .lookbook_txt{
@@ -472,12 +493,31 @@ li{
     border: 1px solid #fff;
     background-color: #fff;
     height: 96px ;
-    width: 330px;
+    width: 1000px;
 }
 
 
 .slider{
     background-color: #b8a78d;
+}
+
+.details_box{
+    background-color: #fff;
+    padding: 64px 0px 0px;
+    margin: 40px 0px 0px;
+}
+
+.details_img{
+    background-image: url(../imgs/cooperateManLook2.png);
+    width: 815px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.details_txt_box{
+    width: 272px;
+    height: 168px;
 }
 
 
@@ -539,5 +579,9 @@ li{
 }
 
 #sleeve_pad{
+    display: none;
+}
+
+#details{
     display: none;
 }

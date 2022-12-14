@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="slider">
-        <marquee behavior="" direction=""><p class="slider white_text p-3 mb-0"> <span class="bold">Just In:</span> We’re closed for holidays from December 20th 2021 to Jan 9th 2022</p></marquee>
+        <marquee behavior="" direction=""><p class="slider white_text px-3 pt-2 mb-0"> <span class="bold">Just In:</span> We’re closed for holidays from December 20th 2021 to Jan 9th 2022</p></marquee>
     </div>
     <div>
         <nav class="navbar sticky-top bg-light navbar-expand-md menu-bar py-4">
@@ -36,6 +36,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item px-3">O<span class="nav_line">UR STORY</span></li>
                     <li class="nav-item px-3">G<span class="nav_line">ET IN TOUCH</span></li>
+                    <li class="nav-item px-3 gray_text">G<span>ET IN TOUCH</span></li>
                 </ul>
             </div>
         </nav>
@@ -105,12 +106,16 @@
             </div>
         </div>
     </div>
-    <div class="container icons_button_cover">
+    <div class="container icons_button_cover"  onclick="toggleDetails()" id="show_details">
         <button class="btn icons_button mt-5 px-2">CLICK HERE TO READ MORE ABOUT THE KEY DETAILS OF A SWANK LINE SUIT</button>
     </div>
-    <div id="price">
-        <div class="container">
-
+    <div id="details" class="container">
+        <div class="container details_box d-flex justify-content-evenly">
+            <div class="details_img"></div>
+            <div class="details_txt_box pt-5">
+                <h3 class="bold pt-5" style="text-align: right ;">HANDMADE LAPEL BUTTONHOLES</h3>
+                <p style="text-align: left;" class="pt-3">Milanese lapel buttonholes provide a unique finishing touch that requires intricate hand stitching. A small touch with a big impact – a trademark of the Marquess Man.</p>
+            </div>
         </div>
     </div>
     <div id="lookbook_1" class="mt-5">
@@ -201,6 +206,30 @@
 
     // also get the clock button, so we can change what it says
     var clockButton = document.getElementById('show_sleeve');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // clock is visible. hide it
+      myClock.style.display = 'none';
+      // change button text
+    //   clockButton.innerHTML = 'Show clock';
+    }
+    else {
+      // clock is hidden. show it
+      myClock.style.display = 'block';
+      // change button text
+    //   clockButton.innerHTML = 'Hide clock';
+    }
+  }
+      function toggleDetails() {
+    // get the clock
+    var myClock = document.getElementById('details');
+
+    // get the current value of the clock's display property
+    var displaySetting = myClock.style.display;
+
+    // also get the clock button, so we can change what it says
+    var clockButton = document.getElementById('show_details');
 
     // now toggle the clock and the button text, depending on current state
     if (displaySetting == 'block') {
