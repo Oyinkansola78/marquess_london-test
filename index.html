@@ -45,14 +45,20 @@
         <h1 class="container white_text early_bird biggg">Marquess Man</h1>
     </div>
     <div id="catalogue" class="container cat_parent pt-5">
-        <div class="div1 grid_box_cat_current corp_man bold pt-5 ps-4 zoom">CORPORATE MAN</div>
-        <a href="./html/the_weekender.html" class="clean_list"><div class="div1 grid_box_cat weekender bold pt-5 ps-4 zoom">THE WEEKENDER</div></a>
+        <div class="div1 grid_box_cat corp_man bold pt-5 ps-4 zoom" id="corporate_man" onclick="togglecorporate()">CORPORATE MAN</div>
+        <div class="div1 grid_box_cat weekender bold pt-5 ps-4 zoom" id="the_weekender" onclick="toggleweekender()">THE WEEKENDER</div>
+        <!-- <a href="./html/the_weekender.html" class="clean_list"><div class="div1 grid_box_cat weekender bold pt-5 ps-4 zoom">THE WEEKENDER</div></a> -->
         <div class="div1 grid_box_cat modish_man bold pt-5 ps-4 zoom">MODISH MAN</div>
         <div class="div1 grid_box_cat debonair bold pt-5 ps-4 zoom">DEBONAIR</div>
     </div>
-    <div id="catalogue2" class="container pt-5">
+    <div id="corporate_man_show" class="container pt-5">
         <span class="bold bigg float-start">CORPORATE MAN</span>
         <div class="corp_man img_box_1 container">
+        </div>
+    </div>
+    <div id="the_weekender_show" class="container pt-5">
+        <span class="bold bigg float-start">THE WEEKENDER</span>
+        <div class="weekender img_box_1 container">
         </div>
     </div>
 
@@ -114,5 +120,64 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+    <script>
+        function toggleweekender() {
+        // get the clock
+        var myClock = document.getElementById('the_weekender_show');
+        var myClock2 = document.getElementById('corporate_man_show');
+
+        // get the current value of the clock's display property
+        var displaySetting = myClock.style.display;
+        // var displaySetting2 = myClock2.style.display;
+
+        // also get the clock button, so we can change what it says
+        var clockButton = document.getElementById('the_weekender');
+        var clockButton2 = document.getElementById('corporate_man');
+        clockButton.classList.remove('grid_box_cat');
+        clockButton.classList.add('grid_box_cat_current');
+        clockButton2.classList.remove('grid_box_cat_current');
+        clockButton2.classList.add('grid_box_cat');
+
+        // now toggle the clock and the button text, depending on current state
+        if (displaySetting == 'block') {
+        // clock is visible. hide it
+        myClock.style.display = 'block';
+        } else {
+        myClock.style.display = 'block';
+        }
+        myClock2.style.display = 'none';
+    }
+        function togglecorporate() {
+        // get the clock
+        var myClock = document.getElementById('corporate_man_show');
+        var myClock2 = document.getElementById('the_weekender_show');
+        // get the current value of the clock's display property
+        var displaySetting = myClock.style.display;
+        // var displaySetting2 = myClock2.style.display;
+
+        // also get the clock button, so we can change what it says
+        var clockButton = document.getElementById('corporate_man');
+        var clockButton2 = document.getElementById('the_weekender');
+        clockButton.classList.remove('grid_box_cat');
+        clockButton.classList.add('grid_box_cat_current');
+        clockButton2.classList.remove('grid_box_cat_current');
+        clockButton2.classList.add('grid_box_cat');
+
+        // now toggle the clock and the button text, depending on current state
+        if (displaySetting == 'block') {
+        // clock is visible. hide it
+        myClock.style.display = 'block';
+        // change button text
+        //   clockButton.innerHTML = 'Show clock';
+        }
+        else {
+        // clock is hidden. show it
+        myClock.style.display = 'block';
+        // change button text
+        //   clockButton.innerHTML = 'Hide clock';
+        }
+        myClock2.style.display = 'none';
+    }
+    </script>
 </body>
 </html>

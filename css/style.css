@@ -313,7 +313,7 @@ nav{
     text-align: justify;
     margin-right: 150px;
     margin-top: 70px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* FLEX AND GRIDS */
@@ -369,6 +369,18 @@ nav{
     cursor: pointer;
     height: 160px;
     width: 290px;
+}
+
+/* .grid_box_cat:hover{
+    border: 12px solid #b8a78d;
+} */
+
+.grid_box_cat:hover{
+    border-color:#b8a78d;
+}
+
+.grid_box_cat:visited{
+    border-color:#b8a78d;
 }
 
 .grid_box_1{
@@ -499,12 +511,14 @@ nav{
 
 .slider{
     background-color: #b8a78d;
+    font-size: 14px;
 }
 
 .details_box{
     background-color: #fff;
-    padding: 64px 0px 0px;
-    margin: 40px 0px 0px;
+    padding-top: 64px;
+    margin-top: 40px ;
+    padding-bottom: 64px;
 }
 
 .details_img{
@@ -516,7 +530,7 @@ nav{
 }
 
 .details_txt_box{
-    width: 272px;
+    width: 280px;
     height: 168px;
 }
 
@@ -583,5 +597,9 @@ nav{
 }
 
 #details{
+    display: none;
+}
+
+#the_weekender_show{
     display: none;
 }
