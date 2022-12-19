@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Blair";
-    src: url(../Blair-ITC.woff2);
+    src: url(../blair-itc-light.ttf);
 }
 
 *{
@@ -29,11 +29,7 @@ li{
 
 nav{
     font-family: 'Blair';
-}
-
-nav{
     font-size: 12.8px;
-    /* background-color: rebeccapurple; */
 }
 
 /* UTILITIES */
@@ -43,14 +39,35 @@ nav{
     width: 100%;
 }
 
-.nav_line:hover{
+.nav_line{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav_line::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #998100;
+    transition: width .3s;
+    margin-top: 4px;
+}
+
+/* .nav_line:hover{
     border-bottom: 3px solid #998100;
     cursor: pointer;
+} */
+
+.nav_line:hover::after{
+    width: 100%;
+    transition: width .3s;
 }
 
 .nav_line_current{
     border-bottom: 3px solid #998100;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .white_text{
@@ -313,7 +330,7 @@ nav{
     text-align: justify;
     margin-right: 150px;
     margin-top: 70px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 /* FLEX AND GRIDS */
@@ -513,6 +530,15 @@ nav{
     background-color: #b8a78d;
     font-size: 14px;
 }
+
+/* .nav_line:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .nav_line:after{  transform-origin:  0% 50%; } */
 
 .details_box{
     background-color: #fff;
