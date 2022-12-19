@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "Helvetica_bld";
+    src: url(../Helvetica\ Neue\ Black.ttf);
+}
+
+@font-face {
     font-family: "Blair";
     src: url(../blair-itc-light.ttf);
 }
@@ -21,6 +26,11 @@ body{
     font-family: 'Helvetica';
     background-color: #e5e5e5;
     color: #000;
+}
+
+.H_bold{
+    font-family: 'Helvetica_bld';
+    font-size: 72px ;
 }
 
 li{
@@ -330,7 +340,8 @@ nav{
     text-align: justify;
     margin-right: 150px;
     margin-top: 70px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(3px); 
 }
 
 /* FLEX AND GRIDS */
