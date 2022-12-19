@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Helvetica_bld";
-    src: url(../Helvetica\ Neue\ Black.ttf);
+    src: url(../HelveticaNeue-Light.otf);
 }
 
 @font-face {
@@ -29,7 +29,7 @@ body{
 }
 
 .H_bold{
-    font-family: 'Helvetica_bld';
+    font-family: 'Helvetica';
     /* font-size: 72px ; */
 }
 
@@ -39,8 +39,10 @@ li{
 
 nav{
     font-family: 'Blair';
-    font-size: 12.8px;
-    font-weight: bolder;
+    /* font-size: 12.8px; */
+    font-size: 0.8rem;
+
+    font-weight: lighter;
 }
 
 /* UTILITIES */
@@ -196,6 +198,10 @@ nav{
     font-weight: bold;
 }
 
+.boldd{
+    font-weight: bolder;
+}
+
 .form-text{
     border-top: 4px solid #998100;
     font-size: 16px;
@@ -341,8 +347,8 @@ nav{
     text-align: justify;
     margin-right: 150px;
     margin-top: 70px;
-    background: rgba(0, 0, 0, 0.0);
-    backdrop-filter: blur(3px); 
+    background: rgba(0, 0, 0, 0.2);
+    /* backdrop-filter: blur(3px);  */
 }
 
 /* FLEX AND GRIDS */
