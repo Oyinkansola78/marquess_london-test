@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Helvetica_bld";
-    src: url(../HelveticaNeue-Light.otf);
+    src: url(../FreeSansBold.otf);
 }
 
 @font-face {
@@ -29,7 +29,7 @@ body{
 }
 
 .H_bold{
-    font-family: 'Helvetica';
+    font-family: 'Helvetica_bld';
     /* font-size: 72px ; */
 }
 
