@@ -236,11 +236,55 @@ nav{
     transition: transform .2s;
   }
   
-  .zoom:hover {
+.zoom:hover {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
-  }
+}
+
+.grid_box_cat_img1{
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/041A3822-sm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.grid_box_cat_img2{
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/DR1A7450.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.grid_box_cat_img3{
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/_0LB8871.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.grid_box_cat_img4{
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/debonair.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.grid_box_cat_img:hover{
+    transform: scale(1.1);
+}
 
 /* BUTTONS */
 
@@ -348,6 +392,7 @@ nav{
     margin-right: 150px;
     margin-top: 70px;
     background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 30px 40px 40px rgba(0,0,0,0.3);
     /* backdrop-filter: blur(3px);  */
 }
 
@@ -395,6 +440,8 @@ nav{
     cursor: pointer;
     height: 160px;
     width: 290px;
+    overflow: hidden;
+    position: relative;
 }
 
 .grid_box_cat{
@@ -404,7 +451,18 @@ nav{
     cursor: pointer;
     height: 160px;
     width: 290px;
+    overflow: hidden;
+    position: relative;
 }
+
+.article-title-link {
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    /* padding: 10px; */
+}
+
 
 /* .grid_box_cat:hover{
     border: 12px solid #b8a78d;
@@ -547,6 +605,7 @@ nav{
 .slider{
     background-color: #b8a78d;
     font-size: 14px;
+    /* font-weight: lighter; */
 }
 
 /* .nav_line:after {
@@ -649,8 +708,18 @@ nav{
 }
 
 
+.show_sm{
+    display: none;
+}
+
 @media only screen and (max-width: 1195px){
-    .navbar-brand{
+    .show_bg{
         display: none;
+    }
+    .show_sm{
+        display: block;
+    }
+    .nav_sm_adjust{
+        padding-left: 170px;
     }
 }

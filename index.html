@@ -14,7 +14,7 @@
         <marquee behavior="" direction=""><p class="slider white_text px-3 pt-2 mb-0"> <span class="bold">Just In:</span> We’re closed for holidays from December 20th 2021 to Jan 9th 2022</p></marquee>
     </div>
     <div>
-        <nav class="navbar sticky-top bg-light navbar-expand-md menu-bar py-3">
+        <nav class="navbar sticky-top bg-light navbar-expand-md menu-bar py-3 show_bg">
             <div class="container">
                 <ul class="navbar-nav">
                     <li class="nav-item px-3">
@@ -40,17 +40,58 @@
                 </ul>
             </div>
         </nav>
+        <nav class="navbar sticky-top bg-light navbar-expand-md menu-bar py-3 show_sm">
+            <a class="navbar-brand mx-5 my-5" href="#">
+                <img src="../imgs/ML-Black-Logo.svg" alt="logo" class="logo">
+            </a>
+            <div class="container mt-3 nav_sm_adjust">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <div class="dropdown">
+                            <a class="dropbtn">T<span class="nav_line">AILORING</span></a>
+                            <div class="dropdown-content">
+                                <a href="#">OUR PROCESS</a>
+                                <a href="./html/swank_line.html">SWANK LINE</a>
+                                <a href="#">MODCON LINE</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class=" px-3">L<span class="nav_line cool-link">IFESTYLE</span></li>
+                    <li class="nav-item px-3 pb-3">M<span class="nav_line_current">ARQUESS MAN</span></li>
+                    <li class="nav-item px-3">O<span class="nav_line">UR STORY</span></li>
+                    <li class="nav-item px-3">G<span class="nav_line">ET IN TOUCH</span></li>
+                </ul>
+            </div>
+        </nav>
     </div>
      <div id="showcase_mm" class="pt-3">
         <h1 class="container white_text early_bird biggg">Marquess Man</h1>
     </div>
     <div id="catalogue" class="container cat_parent pt-5">
-        <div class="div1 grid_box_cat_current corp_man bold pt-5 ps-4 zoom" id="corporate_man" onclick="togglecorporate()">CORPORATE MAN</div>
-        <div class="div1 grid_box_cat weekender bold pt-5 ps-4 zoom" id="the_weekender" onclick="toggleweekender()">THE WEEKENDER</div>
-        <!-- <a href="./html/the_weekender.html" class="clean_list"><div class="div1 grid_box_cat weekender bold pt-5 ps-4 zoom">THE WEEKENDER</div></a> -->
-        <div class="div1 grid_box_cat modish_man bold pt-5 ps-4 zoom">MODISH MAN</div>
-        <div class="div1 grid_box_cat debonair bold pt-5 ps-4 zoom">DEBONAIR</div>
+        <!-- <div class="article-container div1 grid_box_cat_current bold pt-5 ps-4">
+            <div class="article-img-holder"></div>CORPORATE MAN</div> -->
+        <!-- <div class="div1 grid_box_cat_current bold pt-5 ps-4" >
+            <div class="article-img-holder"></div>
+            <p class="article-title-link">CORPORATE MAN</p>
+        </div> -->
+        <div class="div1 grid_box_cat_current bold" id="corporate_man" onclick="togglecorporate()">
+            <div class="grid_box_cat_img grid_box_cat_img1"></div>
+            <p class="article-title-link px-3 mb-5 bold">CORPORATE MAN</p>
+        </div>
+        <div class="div1 grid_box_cat bold" id="the_weekender" onclick="toggleweekender()">
+            <div class="grid_box_cat_img grid_box_cat_img2"></div>
+            <p class="article-title-link px-3 mb-5 bold">THE WEEKENDER</p>
+        </div>
+        <div class="div1 grid_box_cat bold" >
+            <div class="grid_box_cat_img grid_box_cat_img3"></div>
+            <p class="article-title-link px-3 mb-5 bold">MODISH MAN</p>
+        </div>
+        <div class="div1 grid_box_cat bold">
+            <div class="grid_box_cat_img grid_box_cat_img4"></div>
+            <p class="article-title-link px-3 mb-5 bold">DEBONAIR</p>
+        </div>
     </div>
+
     <div id="corporate_man_show" class="container pt-5">
         <span class=" bigg float-start H_bold bold">CORPORATE MAN</span>
         <div class="corp_man img_box_1 container">
@@ -178,6 +219,20 @@
         }
         myClock2.style.display = 'none';
     }
+    </script>
+    <script>
+        $(document).ready(function() {
+
+$('.grid_box_cat').mouseover(function() {
+
+    $(this).find('.grid_box_cat_img').css('transform', 'scale(1.1)');
+});
+
+$('.grid_box_cat').mouseout(function() {
+
+    $(this).find('.grid_box_cat_img').css('transform', 'scale(1)');
+});
+});
     </script>
 </body>
 </html>
