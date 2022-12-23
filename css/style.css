@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "Blair";
-    src: url(../blair-itc-medium.ttf);
+    src: url(../blair-itc-light.ttf);
 }
 
 *{
@@ -41,8 +41,7 @@ nav{
     font-family: 'Blair';
     /* font-size: 12.8px; */
     font-size: 0.8rem;
-
-    font-weight: lighter;
+    font-weight: bolder;
 }
 
 /* UTILITIES */
